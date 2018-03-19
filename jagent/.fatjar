@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Tue Jan 10 15:15:28 CST 2017
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=E\:\\springWorkspace\\agent\\agent_fat.jar
+manifest.mergeall=true
+manifest.mainclass=hello.SampleController
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=
+includes=

@@ -1,0 +1,433 @@
+[ INFO ] [2017-02-23 14:27:58] org.springframework.boot.SpringApplication [48] - Starting application on WANGJINGJING with PID 9928 (E:\ethinksvn\code\agent\jagent\build\server\lib\123.jar started by exlink in E:\ethinksvn\code\agent\jagent\build\server\bin)
+[ INFO ] [2017-02-23 14:27:58] org.springframework.boot.SpringApplication [661] - No active profile set, falling back to default profiles: default
+[ INFO ] [2017-02-23 14:27:58] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f4083a: startup date [Thu Feb 23 14:27:58 CST 2017]; root of context hierarchy
+[ INFO ] [2017-02-23 14:27:58] org.hibernate.validator.internal.util.Version [30] - HV000001: Hibernate Validator 5.2.4.Final
+[ INFO ] [2017-02-23 14:27:59] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e9dc7b3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2017-02-23 14:28:01] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [87] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2017-02-23 14:28:01] org.apache.catalina.core.StandardService [179] - Starting service Tomcat
+[ INFO ] [2017-02-23 14:28:01] org.apache.catalina.core.StandardEngine [179] - Starting Servlet Engine: Apache Tomcat/8.5.6
+[ INFO ] [2017-02-23 14:28:01] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2017-02-23 14:28:01] org.springframework.web.context.ContextLoader [276] - Root WebApplicationContext: initialization completed in 3272 ms
+[ INFO ] [2017-02-23 14:28:01] org.springframework.boot.web.servlet.ServletRegistrationBean [190] - Mapping servlet: 'dispatcherServlet' to [/]
+[ INFO ] [2017-02-23 14:28:01] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2017-02-23 14:28:01] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2017-02-23 14:28:01] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2017-02-23 14:28:01] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2017-02-23 14:28:02] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f4083a: startup date [Thu Feb 23 14:27:58 CST 2017]; root of context hierarchy
+[ INFO ] [2017-02-23 14:28:02] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2017-02-23 14:28:02] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2017-02-23 14:28:02] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2017-02-23 14:28:02] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2017-02-23 14:28:02] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2017-02-23 14:28:03] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [431] - Registering beans for JMX exposure on startup
+[ INFO ] [2017-02-23 14:28:03] org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [245] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[ INFO ] [2017-02-23 14:28:03] org.apache.coyote.http11.Http11NioProtocol [179] - Initializing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 14:28:03] org.apache.coyote.http11.Http11NioProtocol [179] - Starting ProtocolHandler [http-nio-8080]
+[ ERROR] [2017-02-23 14:28:03] org.apache.coyote.http11.Http11NioProtocol [181] - Failed to start end point associated with ProtocolHandler [http-nio-8080]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.ethink.agent.Main.start(Main.java:31)
+	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+[ ERROR] [2017-02-23 14:28:03] org.apache.catalina.core.StandardService [181] - Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.ethink.agent.Main.start(Main.java:31)
+	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	... 15 common frames omitted
+[ INFO ] [2017-02-23 14:28:03] org.apache.coyote.http11.Http11NioProtocol [179] - Pausing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 14:28:03] org.apache.catalina.core.StandardService [179] - Stopping service Tomcat
+[ INFO ] [2017-02-23 14:28:03] org.apache.catalina.util.LifecycleBase [179] - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+[ INFO ] [2017-02-23 14:28:03] org.apache.coyote.http11.Http11NioProtocol [179] - Stopping ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 14:28:03] org.apache.coyote.http11.Http11NioProtocol [179] - Destroying ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 14:28:03] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[ ERROR] [2017-02-23 14:28:03] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+[ INFO ] [2017-02-23 14:28:03] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [987] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f4083a: startup date [Thu Feb 23 14:27:58 CST 2017]; root of context hierarchy
+[ INFO ] [2017-02-23 14:28:03] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [449] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2017-02-23 14:30:03] org.springframework.boot.SpringApplication [48] - Starting application on WANGJINGJING with PID 1972 (E:\ethinksvn\code\agent\jagent\build\server\lib\123.jar started by exlink in E:\ethinksvn\code\agent\jagent\build\server\bin)
+[ INFO ] [2017-02-23 14:30:03] org.springframework.boot.SpringApplication [661] - No active profile set, falling back to default profiles: default
+[ INFO ] [2017-02-23 14:30:04] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f4083a: startup date [Thu Feb 23 14:30:04 CST 2017]; root of context hierarchy
+[ INFO ] [2017-02-23 14:30:04] org.hibernate.validator.internal.util.Version [30] - HV000001: Hibernate Validator 5.2.4.Final
+[ INFO ] [2017-02-23 14:30:05] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e9dc7b3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2017-02-23 14:30:06] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [87] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2017-02-23 14:30:06] org.apache.catalina.core.StandardService [179] - Starting service Tomcat
+[ INFO ] [2017-02-23 14:30:06] org.apache.catalina.core.StandardEngine [179] - Starting Servlet Engine: Apache Tomcat/8.5.6
+[ INFO ] [2017-02-23 14:30:06] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2017-02-23 14:30:06] org.springframework.web.context.ContextLoader [276] - Root WebApplicationContext: initialization completed in 2299 ms
+[ INFO ] [2017-02-23 14:30:06] org.springframework.boot.web.servlet.ServletRegistrationBean [190] - Mapping servlet: 'dispatcherServlet' to [/]
+[ INFO ] [2017-02-23 14:30:06] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2017-02-23 14:30:06] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2017-02-23 14:30:06] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2017-02-23 14:30:06] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2017-02-23 14:30:07] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f4083a: startup date [Thu Feb 23 14:30:04 CST 2017]; root of context hierarchy
+[ INFO ] [2017-02-23 14:30:07] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2017-02-23 14:30:07] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2017-02-23 14:30:07] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2017-02-23 14:30:07] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2017-02-23 14:30:07] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2017-02-23 14:30:07] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [431] - Registering beans for JMX exposure on startup
+[ INFO ] [2017-02-23 14:30:07] org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [245] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[ INFO ] [2017-02-23 14:30:07] org.apache.coyote.http11.Http11NioProtocol [179] - Initializing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 14:30:07] org.apache.coyote.http11.Http11NioProtocol [179] - Starting ProtocolHandler [http-nio-8080]
+[ ERROR] [2017-02-23 14:30:07] org.apache.coyote.http11.Http11NioProtocol [181] - Failed to start end point associated with ProtocolHandler [http-nio-8080]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.ethink.agent.Main.start(Main.java:31)
+	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+[ ERROR] [2017-02-23 14:30:07] org.apache.catalina.core.StandardService [181] - Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.ethink.agent.Main.start(Main.java:31)
+	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	... 15 common frames omitted
+[ INFO ] [2017-02-23 14:30:07] org.apache.coyote.http11.Http11NioProtocol [179] - Pausing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 14:30:07] org.apache.catalina.core.StandardService [179] - Stopping service Tomcat
+[ INFO ] [2017-02-23 14:30:07] org.apache.catalina.util.LifecycleBase [179] - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+[ INFO ] [2017-02-23 14:30:07] org.apache.coyote.http11.Http11NioProtocol [179] - Stopping ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 14:30:07] org.apache.coyote.http11.Http11NioProtocol [179] - Destroying ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 14:30:07] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[ ERROR] [2017-02-23 14:30:07] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+[ INFO ] [2017-02-23 14:30:07] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [987] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f4083a: startup date [Thu Feb 23 14:30:04 CST 2017]; root of context hierarchy
+[ INFO ] [2017-02-23 14:30:07] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [449] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2017-02-23 15:37:12] org.springframework.boot.SpringApplication [48] - Starting application on WANGJINGJING with PID 9304 (E:\ethinksvn\code\agent\jagent\build\server\lib\123.jar started by exlink in E:\ethinksvn\code\agent\jagent\build\server\bin)
+[ INFO ] [2017-02-23 15:37:12] org.springframework.boot.SpringApplication [661] - No active profile set, falling back to default profiles: default
+[ INFO ] [2017-02-23 15:37:13] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d6f285: startup date [Thu Feb 23 15:37:13 CST 2017]; root of context hierarchy
+[ INFO ] [2017-02-23 15:37:13] org.hibernate.validator.internal.util.Version [30] - HV000001: Hibernate Validator 5.2.4.Final
+[ INFO ] [2017-02-23 15:37:15] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3729b71d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2017-02-23 15:37:16] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [87] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2017-02-23 15:37:16] org.apache.catalina.core.StandardService [179] - Starting service Tomcat
+[ INFO ] [2017-02-23 15:37:16] org.apache.catalina.core.StandardEngine [179] - Starting Servlet Engine: Apache Tomcat/8.5.6
+[ INFO ] [2017-02-23 15:37:16] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2017-02-23 15:37:16] org.springframework.web.context.ContextLoader [276] - Root WebApplicationContext: initialization completed in 3849 ms
+[ INFO ] [2017-02-23 15:37:17] org.springframework.boot.web.servlet.ServletRegistrationBean [190] - Mapping servlet: 'dispatcherServlet' to [/]
+[ INFO ] [2017-02-23 15:37:17] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2017-02-23 15:37:17] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2017-02-23 15:37:17] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2017-02-23 15:37:17] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2017-02-23 15:37:18] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d6f285: startup date [Thu Feb 23 15:37:13 CST 2017]; root of context hierarchy
+[ INFO ] [2017-02-23 15:37:18] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2017-02-23 15:37:18] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2017-02-23 15:37:18] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2017-02-23 15:37:18] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2017-02-23 15:37:18] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2017-02-23 15:37:19] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [431] - Registering beans for JMX exposure on startup
+[ INFO ] [2017-02-23 15:37:19] org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [245] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[ INFO ] [2017-02-23 15:37:19] org.apache.coyote.http11.Http11NioProtocol [179] - Initializing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 15:37:19] org.apache.coyote.http11.Http11NioProtocol [179] - Starting ProtocolHandler [http-nio-8080]
+[ ERROR] [2017-02-23 15:37:19] org.apache.coyote.http11.Http11NioProtocol [181] - Failed to start end point associated with ProtocolHandler [http-nio-8080]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.ethink.agent.Main.start(Main.java:31)
+	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+[ ERROR] [2017-02-23 15:37:19] org.apache.catalina.core.StandardService [181] - Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.ethink.agent.Main.start(Main.java:31)
+	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	... 15 common frames omitted
+[ INFO ] [2017-02-23 15:37:19] org.apache.coyote.http11.Http11NioProtocol [179] - Pausing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 15:37:19] org.apache.catalina.core.StandardService [179] - Stopping service Tomcat
+[ INFO ] [2017-02-23 15:37:19] org.apache.catalina.util.LifecycleBase [179] - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+[ INFO ] [2017-02-23 15:37:19] org.apache.coyote.http11.Http11NioProtocol [179] - Stopping ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 15:37:19] org.apache.coyote.http11.Http11NioProtocol [179] - Destroying ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 15:37:19] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[ ERROR] [2017-02-23 15:37:19] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+[ INFO ] [2017-02-23 15:37:19] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [987] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d6f285: startup date [Thu Feb 23 15:37:13 CST 2017]; root of context hierarchy
+[ INFO ] [2017-02-23 15:37:19] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [449] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2017-02-23 15:37:41] org.springframework.boot.SpringApplication [48] - Starting application on WANGJINGJING with PID 4668 (E:\ethinksvn\code\agent\jagent\build\server\lib\123.jar started by exlink in E:\ethinksvn\code\agent\jagent\build\server\bin)
+[ INFO ] [2017-02-23 15:37:41] org.springframework.boot.SpringApplication [661] - No active profile set, falling back to default profiles: default
+[ INFO ] [2017-02-23 15:37:41] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f4083a: startup date [Thu Feb 23 15:37:41 CST 2017]; root of context hierarchy
+[ INFO ] [2017-02-23 15:37:41] org.hibernate.validator.internal.util.Version [30] - HV000001: Hibernate Validator 5.2.4.Final
+[ INFO ] [2017-02-23 15:37:42] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e9dc7b3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2017-02-23 15:37:43] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [87] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2017-02-23 15:37:43] org.apache.catalina.core.StandardService [179] - Starting service Tomcat
+[ INFO ] [2017-02-23 15:37:43] org.apache.catalina.core.StandardEngine [179] - Starting Servlet Engine: Apache Tomcat/8.5.6
+[ INFO ] [2017-02-23 15:37:43] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2017-02-23 15:37:43] org.springframework.web.context.ContextLoader [276] - Root WebApplicationContext: initialization completed in 2305 ms
+[ INFO ] [2017-02-23 15:37:43] org.springframework.boot.web.servlet.ServletRegistrationBean [190] - Mapping servlet: 'dispatcherServlet' to [/]
+[ INFO ] [2017-02-23 15:37:43] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2017-02-23 15:37:43] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2017-02-23 15:37:43] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2017-02-23 15:37:43] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2017-02-23 15:37:44] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f4083a: startup date [Thu Feb 23 15:37:41 CST 2017]; root of context hierarchy
+[ INFO ] [2017-02-23 15:37:44] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2017-02-23 15:37:44] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2017-02-23 15:37:44] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2017-02-23 15:37:44] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2017-02-23 15:37:44] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2017-02-23 15:37:44] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [431] - Registering beans for JMX exposure on startup
+[ INFO ] [2017-02-23 15:37:44] org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [245] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[ INFO ] [2017-02-23 15:37:44] org.apache.coyote.http11.Http11NioProtocol [179] - Initializing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 15:37:44] org.apache.coyote.http11.Http11NioProtocol [179] - Starting ProtocolHandler [http-nio-8080]
+[ ERROR] [2017-02-23 15:37:44] org.apache.coyote.http11.Http11NioProtocol [181] - Failed to start end point associated with ProtocolHandler [http-nio-8080]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.ethink.agent.Main.start(Main.java:31)
+	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+[ ERROR] [2017-02-23 15:37:44] org.apache.catalina.core.StandardService [181] - Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.ethink.agent.Main.start(Main.java:31)
+	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	... 15 common frames omitted
+[ INFO ] [2017-02-23 15:37:44] org.apache.coyote.http11.Http11NioProtocol [179] - Pausing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 15:37:44] org.apache.catalina.core.StandardService [179] - Stopping service Tomcat
+[ INFO ] [2017-02-23 15:37:44] org.apache.catalina.util.LifecycleBase [179] - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+[ INFO ] [2017-02-23 15:37:44] org.apache.coyote.http11.Http11NioProtocol [179] - Stopping ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 15:37:44] org.apache.coyote.http11.Http11NioProtocol [179] - Destroying ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2017-02-23 15:37:44] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[ ERROR] [2017-02-23 15:37:45] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+[ INFO ] [2017-02-23 15:37:45] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [987] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f4083a: startup date [Thu Feb 23 15:37:41 CST 2017]; root of context hierarchy
+[ INFO ] [2017-02-23 15:37:45] com.ethink.agent.schedule.CheckUpdateStatusSchedule [36] - CheckUpdateStatusSchedule start...
+[ INFO ] [2017-02-23 15:37:45] com.ethink.agent.schedule.service.CheckUpdateStatusService [28] - 检查更新状态服务开始...
+[ INFO ] [2017-02-23 15:37:45] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [449] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2017-02-23 15:37:45] org.springframework.beans.factory.xml.XmlBeanDefinitionReader [317] - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[ INFO ] [2017-02-23 15:37:45] org.springframework.jdbc.support.SQLErrorCodesFactory [127] - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+[ ERROR] [2017-02-23 15:37:45] com.ethink.agent.schedule.CheckUpdateStatusSchedule [40] - 检查更新状态失败,请联系维护人员！

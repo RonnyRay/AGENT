@@ -1,0 +1,193 @@
+[ INFO ] [2018-03-14 16:36:32] com.ethink.agent.Main [48] - Starting Main on Ronny with PID 15160 (C:\Users\Ronny\IdeaProjects\jagent\target\classes started by Ronny in C:\Users\Ronny\IdeaProjects\jagent)
+[ INFO ] [2018-03-14 16:36:32] com.ethink.agent.Main [661] - No active profile set, falling back to default profiles: default
+[ INFO ] [2018-03-14 16:36:32] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@654f0d9c: startup date [Wed Mar 14 16:36:32 CST 2018]; root of context hierarchy
+[ INFO ] [2018-03-14 16:36:32] org.hibernate.validator.internal.util.Version [30] - HV000001: Hibernate Validator 5.2.4.Final
+[ INFO ] [2018-03-14 16:36:33] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'myBatisConfiguration' of type [class com.ethink.agent.db.MyBatisConfiguration$$EnhancerBySpringCGLIB$$444af497] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-03-14 16:36:34] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-03-14 16:36:34] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-03-14 16:36:34] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'taskFunctionDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-03-14 16:36:34] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'agentFunctionDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-03-14 16:36:34] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4b7818fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-03-14 16:36:34] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [87] - Tomcat initialized with port(s): 51001 (http)
+[ INFO ] [2018-03-14 16:36:34] org.apache.catalina.core.StandardService [179] - Starting service Tomcat
+[ INFO ] [2018-03-14 16:36:34] org.apache.catalina.core.StandardEngine [179] - Starting Servlet Engine: Apache Tomcat/8.5.6
+[ INFO ] [2018-03-14 16:36:34] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-03-14 16:36:34] org.springframework.web.context.ContextLoader [276] - Root WebApplicationContext: initialization completed in 2664 ms
+[ INFO ] [2018-03-14 16:36:35] org.springframework.boot.web.servlet.ServletRegistrationBean [190] - Mapping servlet: 'dispatcherServlet' to [/]
+[ INFO ] [2018-03-14 16:36:35] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-03-14 16:36:35] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-03-14 16:36:35] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-03-14 16:36:35] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-03-14 16:36:35] org.quartz.impl.StdSchedulerFactory [1184] - Using default implementation for ThreadExecutor
+[ INFO ] [2018-03-14 16:36:35] org.quartz.simpl.SimpleThreadPool [268] - Job execution threads will use class loader of thread: main
+[ INFO ] [2018-03-14 16:36:35] org.quartz.core.SchedulerSignalerImpl [61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[ INFO ] [2018-03-14 16:36:35] org.quartz.core.QuartzScheduler [240] - Quartz Scheduler v.2.2.1 created.
+[ INFO ] [2018-03-14 16:36:35] org.quartz.simpl.RAMJobStore [155] - RAMJobStore initialized.
+[ INFO ] [2018-03-14 16:36:35] org.quartz.core.QuartzScheduler [305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[ INFO ] [2018-03-14 16:36:35] org.quartz.impl.StdSchedulerFactory [1339] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[ INFO ] [2018-03-14 16:36:35] org.quartz.impl.StdSchedulerFactory [1343] - Quartz scheduler version: 2.2.1
+[ INFO ] [2018-03-14 16:36:35] com.ethink.agent.task.mng.TaskManager [58] - com.ethink.agent.task.mng.TaskManager的jobListener启动
+[ INFO ] [2018-03-14 16:36:35] com.ethink.agent.task.mng.TaskManager [58] - com.ethink.agent.task.mng.TaskManager的jobListener启动
+[ INFO ] [2018-03-14 16:36:35] com.ethink.agent.task.mng.TaskManager [58] - com.ethink.agent.task.mng.TaskManager的jobListener启动
+[ INFO ] [2018-03-14 16:36:35] com.ethink.agent.task.mng.TaskManager [58] - com.ethink.agent.task.mng.TaskManager的jobListener启动
+[ INFO ] [2018-03-14 16:36:35] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@654f0d9c: startup date [Wed Mar 14 16:36:32 CST 2018]; root of context hierarchy
+[ INFO ] [2018-03-14 16:36:36] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-03-14 16:36:36] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-03-14 16:36:36] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-03-14 16:36:36] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-03-14 16:36:37] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-03-14 16:36:37] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [431] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-03-14 16:36:37] org.apache.coyote.http11.Http11NioProtocol [179] - Initializing ProtocolHandler ["http-nio-51001"]
+[ INFO ] [2018-03-14 16:36:37] org.apache.coyote.http11.Http11NioProtocol [179] - Starting ProtocolHandler [http-nio-51001]
+[ INFO ] [2018-03-14 16:36:37] org.apache.tomcat.util.net.NioSelectorPool [179] - Using a shared selector for servlet write/read
+[ INFO ] [2018-03-14 16:36:37] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [185] - Tomcat started on port(s): 51001 (http)
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Main [57] - Started Main in 6.472 seconds (JVM running for 8.501)
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.db.ExecutorJDBC [92] - ---------数据库结构不需要更新-------------
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [107] - ----------------------========系统初始配置信息=========-------------------------
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=LISTEN_PORT4TASKSERVER, value=9199, desc=Task TCP主动监听端口}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=TASK_SERVER, value=http://127.0.0.1:8080, desc=Task Server 地址}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=FILE_SERVER, value=http://127.0.0.1:80, desc=文件服务器地址}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=LISTEN_PORT4RDP, value=9299, desc=RDP报文监听端口}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=RDP_PORT, value=9299, desc=RDP报文发送端口}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=TASK_LOOP_TIME, value=120, desc=Http 轮询时间间隔,单位秒}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=ATMC_VER, value=0, desc=atmc版本号}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=AGENT_VER, value=0, desc=agent版本号.}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=DEV_NUM, value=13345678, desc=设备编号}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=TRNEJ, value=0000, desc=命令流水号}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=CTIME, value=0000, desc=C端发包时间}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=NEW_SOF_VER, value=ADV-2.0.0, desc=最新软件版本号}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=NEW_ADV_VER, value=1.0.1, desc=最新广告版本号}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=NEW_CFG_VER, value=CFG-2.0.0, desc=最新配置版本号}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=OLD_SOF_VER, value=, desc=旧软件版本号}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=OLD_ADV_VER, value=1.0.0, desc=旧广告版本号}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=OLD_CFG_VER, value=0000, desc=旧配置版本号}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=OLD_AGENT_VER, value=1.0.0, desc=旧agent版本号}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=PUSHSVRIP, value=, desc=推送服务器地址}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=PUSHSVRPORT, value=, desc=推送服务器端口 }
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=EJSVR, value=, desc=电子流水地址}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=EJSVRPORT, value=, desc=电子流水端口}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=AMSIP, value=, desc=状态监控服务IP}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=AMSTCPPORT, value=, desc=监控服务TCP端口}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=AMSUDPPORT, value=, desc=监控服务UDP端口}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=SENDINTERVAL, value=, desc=监控报文发送间隔(秒)}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=EJUPLOAD, value=, desc=1-上传电子流水，0-不上传电子流水}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=EJONLY, value=, desc=只打印电子流水不打印纸质流水（ejupload必须为1才有效），0-打印电子流水和纸质流水}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=EJTORLERANT, value=, desc=电子流水丢失容忍笔数，硬盘未坏}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=EJHDDTOLERANT, value=, desc=电子流水丢失容忍笔数，硬盘已坏}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=TRANSINFOBATCH, value=, desc=对账报文批量上传笔数}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [109] - {name=FILELIMIT, value=, desc=上传文件大小限制(KB)}
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [111] - ----------------------============================-------------------------
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.net.TcpListening [45] - TCP报文监听启动,port 9199
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.net.RDPListening [31] - RDPListening+++++++++++++++star++++++++++++
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.net.RDPListening [56] - RDPListening++++++++++++++++++end+++++++++
+[ INFO ] [2018-03-14 16:36:37] org.quartz.core.QuartzScheduler [575] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.net.HttpPollingScheduler [54] - HTTP轮询启动,轮询间隔：120,将于120秒后开始第一次轮询
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Main [48] - =================jagent started======================
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.Agent [121] - 检查是否有需要还原的任务-----
+[ INFO ] [2018-03-14 16:36:37] com.ethink.agent.event.EventHandler [27] - ====Event=====com.ethink.agent.event.Event@385e36d4
+[ INFO ] [2018-03-14 16:36:38] com.ethink.agent.task.mng.TaskManager [306] - 还原未执行的任务列表和extra状态的任务，任务数量：0
+[ INFO ] [2018-03-14 16:36:38] com.ethink.agent.net.RDPListening [42] - 10秒后再次连接rdp
+[ INFO ] [2018-03-14 16:36:49] com.ethink.agent.net.RDPListening [42] - 10秒后再次连接rdp
+[ INFO ] [2018-03-14 16:51:45] com.ethink.agent.Main [48] - Starting Main on Ronny with PID 1056 (C:\Users\Ronny\IdeaProjects\jagent\target\classes started by Ronny in C:\Users\Ronny\IdeaProjects\jagent)
+[ INFO ] [2018-03-14 16:51:45] com.ethink.agent.Main [661] - No active profile set, falling back to default profiles: default
+[ INFO ] [2018-03-14 16:51:45] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e0b85f9: startup date [Wed Mar 14 16:51:45 CST 2018]; root of context hierarchy
+[ INFO ] [2018-03-14 16:51:47] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'myBatisConfiguration' of type [class com.ethink.agent.db.MyBatisConfiguration$$EnhancerBySpringCGLIB$$98bd2230] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-03-14 16:51:47] org.hibernate.validator.internal.util.Version [30] - HV000001: Hibernate Validator 5.2.4.Final
+[ INFO ] [2018-03-14 16:51:47] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-03-14 16:51:47] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-03-14 16:51:47] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'taskFunctionDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-03-14 16:51:47] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'agentFunctionDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-03-14 16:51:47] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9fea4695] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[ INFO ] [2018-03-14 16:51:48] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [87] - Tomcat initialized with port(s): 51001 (http)
+[ INFO ] [2018-03-14 16:51:48] org.apache.catalina.core.StandardService [179] - Starting service Tomcat
+[ INFO ] [2018-03-14 16:51:48] org.apache.catalina.core.StandardEngine [179] - Starting Servlet Engine: Apache Tomcat/8.5.6
+[ INFO ] [2018-03-14 16:51:48] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2018-03-14 16:51:48] org.springframework.web.context.ContextLoader [276] - Root WebApplicationContext: initialization completed in 2275 ms
+[ INFO ] [2018-03-14 16:51:48] org.springframework.boot.web.servlet.ServletRegistrationBean [190] - Mapping servlet: 'dispatcherServlet' to [/]
+[ INFO ] [2018-03-14 16:51:48] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2018-03-14 16:51:48] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2018-03-14 16:51:48] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2018-03-14 16:51:48] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2018-03-14 16:51:48] org.quartz.impl.StdSchedulerFactory [1184] - Using default implementation for ThreadExecutor
+[ INFO ] [2018-03-14 16:51:48] org.quartz.simpl.SimpleThreadPool [268] - Job execution threads will use class loader of thread: main
+[ INFO ] [2018-03-14 16:51:48] org.quartz.core.SchedulerSignalerImpl [61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[ INFO ] [2018-03-14 16:51:48] org.quartz.core.QuartzScheduler [240] - Quartz Scheduler v.2.2.1 created.
+[ INFO ] [2018-03-14 16:51:48] org.quartz.simpl.RAMJobStore [155] - RAMJobStore initialized.
+[ INFO ] [2018-03-14 16:51:48] org.quartz.core.QuartzScheduler [305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[ INFO ] [2018-03-14 16:51:48] org.quartz.impl.StdSchedulerFactory [1339] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[ INFO ] [2018-03-14 16:51:48] org.quartz.impl.StdSchedulerFactory [1343] - Quartz scheduler version: 2.2.1
+[ INFO ] [2018-03-14 16:51:48] com.ethink.agent.task.mng.TaskManager [58] - com.ethink.agent.task.mng.TaskManager的jobListener启动
+[ INFO ] [2018-03-14 16:51:48] com.ethink.agent.task.mng.TaskManager [58] - com.ethink.agent.task.mng.TaskManager的jobListener启动
+[ INFO ] [2018-03-14 16:51:48] com.ethink.agent.task.mng.TaskManager [58] - com.ethink.agent.task.mng.TaskManager的jobListener启动
+[ INFO ] [2018-03-14 16:51:48] com.ethink.agent.task.mng.TaskManager [58] - com.ethink.agent.task.mng.TaskManager的jobListener启动
+[ INFO ] [2018-03-14 16:51:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e0b85f9: startup date [Wed Mar 14 16:51:45 CST 2018]; root of context hierarchy
+[ INFO ] [2018-03-14 16:51:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2018-03-14 16:51:48] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2018-03-14 16:51:48] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-03-14 16:51:48] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-03-14 16:51:48] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2018-03-14 16:51:49] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [431] - Registering beans for JMX exposure on startup
+[ INFO ] [2018-03-14 16:51:49] org.apache.coyote.http11.Http11NioProtocol [179] - Initializing ProtocolHandler ["http-nio-51001"]
+[ INFO ] [2018-03-14 16:51:49] org.apache.coyote.http11.Http11NioProtocol [179] - Starting ProtocolHandler [http-nio-51001]
+[ INFO ] [2018-03-14 16:51:49] org.apache.tomcat.util.net.NioSelectorPool [179] - Using a shared selector for servlet write/read
+[ INFO ] [2018-03-14 16:51:49] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [185] - Tomcat started on port(s): 51001 (http)
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Main [57] - Started Main in 3.916 seconds (JVM running for 5.21)
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.db.ExecutorJDBC [92] - ---------数据库结构不需要更新-------------
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [107] - ----------------------========系统初始配置信息=========-------------------------
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=LISTEN_PORT4TASKSERVER, value=9199, desc=Task TCP主动监听端口}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=TASK_SERVER, value=http://127.0.0.1:8080, desc=Task Server 地址}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=FILE_SERVER, value=http://127.0.0.1:80, desc=文件服务器地址}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=LISTEN_PORT4RDP, value=9299, desc=RDP报文监听端口}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=RDP_PORT, value=9299, desc=RDP报文发送端口}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=TASK_LOOP_TIME, value=120, desc=Http 轮询时间间隔,单位秒}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=ATMC_VER, value=0, desc=atmc版本号}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=AGENT_VER, value=0, desc=agent版本号.}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=DEV_NUM, value=13345678, desc=设备编号}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=TRNEJ, value=0000, desc=命令流水号}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=CTIME, value=0000, desc=C端发包时间}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=NEW_SOF_VER, value=ADV-2.0.0, desc=最新软件版本号}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=NEW_ADV_VER, value=1.0.1, desc=最新广告版本号}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=NEW_CFG_VER, value=CFG-2.0.0, desc=最新配置版本号}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=OLD_SOF_VER, value=, desc=旧软件版本号}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=OLD_ADV_VER, value=1.0.0, desc=旧广告版本号}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=OLD_CFG_VER, value=0000, desc=旧配置版本号}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=OLD_AGENT_VER, value=1.0.0, desc=旧agent版本号}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=PUSHSVRIP, value=, desc=推送服务器地址}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=PUSHSVRPORT, value=, desc=推送服务器端口 }
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=EJSVR, value=, desc=电子流水地址}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=EJSVRPORT, value=, desc=电子流水端口}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=AMSIP, value=, desc=状态监控服务IP}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=AMSTCPPORT, value=, desc=监控服务TCP端口}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=AMSUDPPORT, value=, desc=监控服务UDP端口}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=SENDINTERVAL, value=, desc=监控报文发送间隔(秒)}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=EJUPLOAD, value=, desc=1-上传电子流水，0-不上传电子流水}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=EJONLY, value=, desc=只打印电子流水不打印纸质流水（ejupload必须为1才有效），0-打印电子流水和纸质流水}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=EJTORLERANT, value=, desc=电子流水丢失容忍笔数，硬盘未坏}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=EJHDDTOLERANT, value=, desc=电子流水丢失容忍笔数，硬盘已坏}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=TRANSINFOBATCH, value=, desc=对账报文批量上传笔数}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [109] - {name=FILELIMIT, value=, desc=上传文件大小限制(KB)}
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [111] - ----------------------============================-------------------------
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.net.TcpListening [45] - TCP报文监听启动,port 9199
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.net.RDPListening [31] - RDPListening+++++++++++++++star++++++++++++
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.net.RDPListening [56] - RDPListening++++++++++++++++++end+++++++++
+[ INFO ] [2018-03-14 16:51:49] org.quartz.core.QuartzScheduler [575] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.net.HttpPollingScheduler [54] - HTTP轮询启动,轮询间隔：120,将于120秒后开始第一次轮询
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Main [48] - =================jagent started======================
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.Agent [121] - 检查是否有需要还原的任务-----
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.event.EventHandler [27] - ====Event=====com.ethink.agent.event.Event@174e1b69
+[ INFO ] [2018-03-14 16:51:49] com.ethink.agent.task.mng.TaskManager [306] - 还原未执行的任务列表和extra状态的任务，任务数量：0
+[ INFO ] [2018-03-14 16:51:50] com.ethink.agent.net.RDPListening [42] - 10秒后再次连接rdp

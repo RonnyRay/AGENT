@@ -1,0 +1,173 @@
+WARN   | wrapper  | 2017/02/23 14:27:53 | Unable to write to the configured log directory: d:\ethinklog\jagent\logs (系统找不到指定的路径。 (0x3))
+WARN   | wrapper  | 2017/02/23 14:27:53 |   The directory does not exist.
+WARN   | wrapper  | 2017/02/23 14:27:53 | Unable to write to the configured log file: d:\ethinklog\jagent\logs\wrapper.log (操作成功完成。 (0x0))
+WARN   | wrapper  | 2017/02/23 14:27:53 |   Falling back to the default file in the current working directory: wrapper.log
+STATUS | wrapper  | 2017/02/23 14:27:53 | --> Wrapper Started as Console
+STATUS | wrapper  | 2017/02/23 14:27:53 | Java Service Wrapper Community Edition 32-bit 3.5.30
+STATUS | wrapper  | 2017/02/23 14:27:53 |   Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2017/02/23 14:27:53 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2017/02/23 14:27:53 | 
+STATUS | wrapper  | 2017/02/23 14:27:54 | Launching a JVM...
+INFO   | jvm 1    | 2017/02/23 14:27:55 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,533 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,533 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,534 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/E:/ethinksvn/code/agent/jagent/build/server/lib/123.jar!/BOOT-INF/classes!/logback.xml]
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,568 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@188b672 - URL [jar:file:/E:/ethinksvn/code/agent/jagent/build/server/lib/123.jar!/BOOT-INF/classes!/logback.xml] is not of type file
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,725 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,859 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Will scan for changes in [jar:file:/E:/ethinksvn/code/agent/jagent/build/server/lib/123.jar!/BOOT-INF/classes!/logback.xml] 
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,859 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Setting ReconfigureOnChangeTask scanning period to 1 minutes
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,881 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,888 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,903 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,973 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@318135 - No compression will be used
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,974 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@318135 - Will use the pattern logs/mylog-%d{yyyy-MM-dd}.%i.log for the active file
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,983 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@e86ae8 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/mylog-%d{yyyy-MM-dd}.%i.log'.
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,983 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@e86ae8 - Roll-over at midnight.
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,997 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@e86ae8 - Setting initial period to Thu Feb 23 14:27:56 CST 2017
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:56,998 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@e86ae8 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:57,005 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: logs/mylog-2017-02-23.0.log
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:57,005 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [null]
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:57,027 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:57,030 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:57,030 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:57,032 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:57,032 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:57,033 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:57,034 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [pedestal] to ALL
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:57,034 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [hammock-cafe] to ALL
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:57,034 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [user] to ALL
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:57,034 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 14:27:57,035 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@a20800 - Registering current configuration as safe fallback point
+INFO   | jvm 1    | 2017/02/23 14:27:57 | 
+INFO   | jvm 1    | 2017/02/23 14:27:58 | 
+INFO   | jvm 1    | 2017/02/23 14:27:58 |   .   ____          _            __ _ _
+INFO   | jvm 1    | 2017/02/23 14:27:58 |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+INFO   | jvm 1    | 2017/02/23 14:27:58 | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+INFO   | jvm 1    | 2017/02/23 14:27:58 |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+INFO   | jvm 1    | 2017/02/23 14:27:58 |   '  |____| .__|_| |_|_| |_\__, | / / / /
+INFO   | jvm 1    | 2017/02/23 14:27:58 |  =========|_|==============|___/=/_/_/_/
+INFO   | jvm 1    | 2017/02/23 14:27:58 |  :: Spring Boot ::        (v1.4.3.RELEASE)
+INFO   | jvm 1    | 2017/02/23 14:27:58 | 
+INFO   | jvm 1    | 2017/02/23 14:27:58 | [ INFO ] [2017-02-23 14:27:58] org.springframework.boot.SpringApplication [48] - Starting application on WANGJINGJING with PID 9928 (E:\ethinksvn\code\agent\jagent\build\server\lib\123.jar started by exlink in E:\ethinksvn\code\agent\jagent\build\server\bin)
+INFO   | jvm 1    | 2017/02/23 14:27:58 | [ INFO ] [2017-02-23 14:27:58] org.springframework.boot.SpringApplication [661] - No active profile set, falling back to default profiles: default
+INFO   | jvm 1    | 2017/02/23 14:27:58 | [ INFO ] [2017-02-23 14:27:58] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f4083a: startup date [Thu Feb 23 14:27:58 CST 2017]; root of context hierarchy
+INFO   | jvm 1    | 2017/02/23 14:27:58 | [ INFO ] [2017-02-23 14:27:58] org.hibernate.validator.internal.util.Version [30] - HV000001: Hibernate Validator 5.2.4.Final
+INFO   | jvm 1    | 2017/02/23 14:28:00 | [ INFO ] [2017-02-23 14:27:59] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [325] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e9dc7b3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO   | jvm 1    | 2017/02/23 14:28:01 | [ INFO ] [2017-02-23 14:28:01] org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [87] - Tomcat initialized with port(s): 8080 (http)
+INFO   | jvm 1    | 2017/02/23 14:28:01 | [ INFO ] [2017-02-23 14:28:01] org.apache.catalina.core.StandardService [179] - Starting service Tomcat
+INFO   | jvm 1    | 2017/02/23 14:28:01 | [ INFO ] [2017-02-23 14:28:01] org.apache.catalina.core.StandardEngine [179] - Starting Servlet Engine: Apache Tomcat/8.5.6
+INFO   | jvm 1    | 2017/02/23 14:28:01 | [ INFO ] [2017-02-23 14:28:01] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [179] - Initializing Spring embedded WebApplicationContext
+INFO   | jvm 1    | 2017/02/23 14:28:01 | [ INFO ] [2017-02-23 14:28:01] org.springframework.web.context.ContextLoader [276] - Root WebApplicationContext: initialization completed in 3272 ms
+INFO   | jvm 1    | 2017/02/23 14:28:01 | [ INFO ] [2017-02-23 14:28:01] org.springframework.boot.web.servlet.ServletRegistrationBean [190] - Mapping servlet: 'dispatcherServlet' to [/]
+INFO   | jvm 1    | 2017/02/23 14:28:01 | [ INFO ] [2017-02-23 14:28:01] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+INFO   | jvm 1    | 2017/02/23 14:28:01 | [ INFO ] [2017-02-23 14:28:01] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+INFO   | jvm 1    | 2017/02/23 14:28:01 | [ INFO ] [2017-02-23 14:28:01] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+INFO   | jvm 1    | 2017/02/23 14:28:01 | [ INFO ] [2017-02-23 14:28:01] org.springframework.boot.web.servlet.FilterRegistrationBean [258] - Mapping filter: 'requestContextFilter' to: [/*]
+INFO   | jvm 1    | 2017/02/23 14:28:02 | [ INFO ] [2017-02-23 14:28:02] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f4083a: startup date [Thu Feb 23 14:27:58 CST 2017]; root of context hierarchy
+INFO   | jvm 1    | 2017/02/23 14:28:02 | [ INFO ] [2017-02-23 14:28:02] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+INFO   | jvm 1    | 2017/02/23 14:28:02 | [ INFO ] [2017-02-23 14:28:02] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+INFO   | jvm 1    | 2017/02/23 14:28:02 | [ INFO ] [2017-02-23 14:28:02] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO   | jvm 1    | 2017/02/23 14:28:02 | [ INFO ] [2017-02-23 14:28:02] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ INFO ] [2017-02-23 14:28:02] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [354] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ INFO ] [2017-02-23 14:28:03] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [431] - Registering beans for JMX exposure on startup
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ INFO ] [2017-02-23 14:28:03] org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor [245] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ INFO ] [2017-02-23 14:28:03] org.apache.coyote.http11.Http11NioProtocol [179] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ INFO ] [2017-02-23 14:28:03] org.apache.coyote.http11.Http11NioProtocol [179] - Starting ProtocolHandler [http-nio-8080]
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ ERROR] [2017-02-23 14:28:03] org.apache.coyote.http11.Http11NioProtocol [181] - Failed to start end point associated with ProtocolHandler [http-nio-8080]
+INFO   | jvm 1    | 2017/02/23 14:28:03 | java.net.BindException: Address already in use: bind
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at sun.nio.ch.Net.bind0(Native Method)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at sun.nio.ch.Net.bind(Unknown Source)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at sun.nio.ch.Net.bind(Unknown Source)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at com.ethink.agent.Main.start(Main.java:31)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ ERROR] [2017-02-23 14:28:03] org.apache.catalina.core.StandardService [181] - Failed to start connector [Connector[HTTP/1.1-8080]]
+INFO   | jvm 1    | 2017/02/23 14:28:03 | org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at com.ethink.agent.Main.start(Main.java:31)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	... 14 common frames omitted
+INFO   | jvm 1    | 2017/02/23 14:28:03 | Caused by: java.net.BindException: Address already in use: bind
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at sun.nio.ch.Net.bind0(Native Method)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at sun.nio.ch.Net.bind(Unknown Source)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at sun.nio.ch.Net.bind(Unknown Source)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 	... 15 common frames omitted
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ INFO ] [2017-02-23 14:28:03] org.apache.coyote.http11.Http11NioProtocol [179] - Pausing ProtocolHandler ["http-nio-8080"]
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ INFO ] [2017-02-23 14:28:03] org.apache.catalina.core.StandardService [179] - Stopping service Tomcat
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ INFO ] [2017-02-23 14:28:03] org.apache.catalina.util.LifecycleBase [179] - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ INFO ] [2017-02-23 14:28:03] org.apache.coyote.http11.Http11NioProtocol [179] - Stopping ProtocolHandler ["http-nio-8080"]
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ INFO ] [2017-02-23 14:28:03] org.apache.coyote.http11.Http11NioProtocol [179] - Destroying ProtocolHandler ["http-nio-8080"]
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ INFO ] [2017-02-23 14:28:03] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] - 
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 
+INFO   | jvm 1    | 2017/02/23 14:28:03 | Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ ERROR] [2017-02-23 14:28:03] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 
+INFO   | jvm 1    | 2017/02/23 14:28:03 | ***************************
+INFO   | jvm 1    | 2017/02/23 14:28:03 | APPLICATION FAILED TO START
+INFO   | jvm 1    | 2017/02/23 14:28:03 | ***************************
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 
+INFO   | jvm 1    | 2017/02/23 14:28:03 | Description:
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 
+INFO   | jvm 1    | 2017/02/23 14:28:03 | The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 
+INFO   | jvm 1    | 2017/02/23 14:28:03 | Action:
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 
+INFO   | jvm 1    | 2017/02/23 14:28:03 | Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+INFO   | jvm 1    | 2017/02/23 14:28:03 | 
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ INFO ] [2017-02-23 14:28:03] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [987] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f4083a: startup date [Thu Feb 23 14:27:58 CST 2017]; root of context hierarchy
+INFO   | jvm 1    | 2017/02/23 14:28:03 | [ INFO ] [2017-02-23 14:28:03] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [449] - Unregistering JMX-exposed beans on shutdown
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: Error in WrapperListener.start callback.  org.springframework.boot.context.embedded.tomcat.ConnectorStartFailedException: Connector configured to listen on port 8080 failed to start
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: org.springframework.boot.context.embedded.tomcat.ConnectorStartFailedException: Connector configured to listen on port 8080 failed to start
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: 	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.checkThatConnectorsHaveStarted(TomcatEmbeddedServletContainer.java:205)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: 	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:183)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: 	at com.ethink.agent.Main.start(Main.java:31)
+INFO   | jvm 1    | 2017/02/23 14:28:03 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+STATUS | wrapper  | 2017/02/23 14:28:04 | <-- Wrapper Stopped

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ethink.agent.db.TaskFunctionDao">
+	<sql id="commsql">
+		select taskId,taskStatus,taskData,startTime,endTime from task
+	</sql>
+	
+	<!-- 插入任务 -->
+	<insert id="insertTaskInfo" parameterType="hashmap">
+		INSERT into task (taskId,planid,msgType,taskStatus,taskData) VALUES (#{taskId},#{planid},#{msgType},#{taskStatus},#{taskData}) 
+	</insert>
+
+	<!-- 更新任务状态和时间-->
+	<update id="updateTaskInfo" parameterType="hashmap">
+		update task set taskStatus=#{taskStatus} 
+			<if test="startTime !=null and startTime !=''">
+				,startTime=#{startTime}
+			</if>
+			<if test="endTime !=null and endTime !=''">
+				,endTime=#{endTime}
+			</if>
+		where taskId = #{taskId}
+	</update>
+	
+	<!-- 获取最近正在升级的任务-->
+	<select id="selectExtraStatus" resultType="com.ethink.agent.task.bean.ServerTask">
+		select taskId,planid,taskStatus,taskData,startTime,endTime from task where 
+		taskStatus = 'extra' ORDER by startTime desc LIMIT 0,1 
+	</select>
+	
+	<!-- 获取最近正在升级的任务-->
+	<select id="selectNotyetExecute" resultType="hashmap">
+		select taskId,planid,msgType,taskStatus,taskData,startTime,endTime from task where 
+		taskStatus = 'extra' or taskStatus = 'ready'
+	</select>
+   
+</mapper>

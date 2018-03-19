@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ethink.agent.db.AgentFunctionDao">
+
+    <!-- 查询配置信息 -->
+	<select id="selectConfig" parameterType="hashmap" resultType="string">
+		select value from config where name=#{name}
+	</select>
+	
+	<!-- 查询所有配置信息 -->
+    <select id="selectAllConfig"  resultType="hashmap">
+        select * from config
+    </select>
+    
+
+	<!-- 查询设备号 -->
+	<select id="selectDeviceNum" resultType="string">
+		select deviceno from DeviceInfo
+	</select>
+
+	<!-- 根据name条件查询SystemInfo表的value -->
+	<select id="selectSystemInfoValueByName" parameterType="hashmap"
+		resultType="string">
+		select value from SystemInfo where name = #{NAME}
+	</select>
+
+	<!-- 插入一条SystemInfo表数据 -->
+	<insert id="insertSystemInfo" parameterType="hashmap">
+		insert into SystemInfo values(#{NAME},#{VALUE},#{describe})
+	</insert>
+
+	<!-- 根据name条件修改SystemInfo表的value -->
+	<update id="updateSystemInfoValueByName" parameterType="hashmap">
+		update SystemInfo set value = #{VALUE} where name = #{NAME}
+	</update>
+		 
+	 <!-- 根据name条件修改config表的value -->
+	<update id="updateConfig" parameterType="hashmap">
+		update config set value = #{value} where name = #{name}
+	</update>
+	
+</mapper>
